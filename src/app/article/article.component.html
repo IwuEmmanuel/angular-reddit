@@ -1,0 +1,16 @@
+<div class="row mb-5">
+    <div class="col-4">
+        <h1 class="text-center">{{ article.votes }}</h1>
+        <h4 class="text-center">Points</h4>
+    </div>
+    <div class="col">
+        <div class="row">
+            <h1> <a href="{{ article.link }}"> {{ article.title }} </a></h1>
+            <div class="meta">({{ article.domain() }})</div>
+        </div>
+        <div class="row">
+            <div class="col-4"><a href (click)="voteUp()" >upvote</a></div>
+            <div class="col-4"><a href (click)="voteDown()">downvote</a></div>
+        </div>
+    </div>
+</div>
